@@ -1,0 +1,44 @@
+:root{
+  --toolbarWidth: 400px;
+  --headerbarHeight: 60px;
+}
+
+.headbar {
+  padding: 12px;
+  height: var(--headerbarHeight);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container {
+  padding: 20px;
+  width: calc(100vw - var(--toolbarWidth));
+  height: calc(100vh - var(--headerbarHeight) - 0.8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbar {
+  width: var(--toolbarWidth) !important;
+}
+
+.tool-container {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+.color-picker {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.image-view {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
